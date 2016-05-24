@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AQMetrics</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+  <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+
+            <!-- Toggle button -->
+            <a class="left-off-canvas-toggle" href="#"><img src="http://52.16.135.192:8080/aqmetrics/resources/images/logos/Logo.png" /></a>
+
+            <!-- Offcanvas menu -->
+            <aside class="left-off-canvas-menu">
+                <ul class="no-bullet">
+                    <li><a href="#"><img src="http://52.16.135.192:8080/aqmetrics/resources/images/buttons/editinfo.png" height="40" width="40" />My Account</a></li>
+                    <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Facebook_Home_logo.svg/2000px-Facebook_Home_logo.svg.png" height="40" width="40" />Home</a></li> 
+					<li><a href="#"><img src="http://52.16.135.192:8080/aqmetrics/resources/images/buttons/help.png" height="40" width="40" />Help</a></li>
+                    <li><a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXH0Xtg8Hwmer4CnaFvouR62avC4H-YtnjvSSs1UL8ohDvfRzmFQ" height="40" width="40" />Logout</a></li> 
+					
+					<section>
+					<br>
+					<br>
+					<br>	
+					<li><a href="#">Portfolio Holdings</a></li>
+                    <li><a href="#">Risk Management</a></li>
+                    <li><a href="#">Transaction Monitoring</a></li>
+					 <li><a href="#">Fess Management</a></li>
+                    <li><a href="#">Document Management</a></li>
+                    <li><a href="#">Data Management</a></li>
+					 <li><a href="#">Annex IV</a></li>
+                
+                </ul>
+            </aside>
+
+            <!-- Main content -->
+		  <!-- sub tabs -->
+ <br>
+ <br>
+<ul class="tabs" data-tab>
+  <li  id="tabs" class="tab-title active"><a href="#panel1">Alerts</a></li>&nbsp &nbsp
+  <li id="tabs" class="tab-title"><a href="#panel2">Fund</a></li>&nbsp &nbsp
+  <li id="tabs" class="tab-title"><a href="#panel3">Alert History</a></li>&nbsp &nbsp
+  <li id="tabs" class="tab-title"><a href="#panel4">False Positive</a></li>&nbsp &nbsp
+	<li id="tabs" class="tab-title"><a href="#panel2">Archived Alerts</a></li>&nbsp &nbsp
+  <li id="tabs" class="tab-title"><a href="#panel2">Hard Rules</a></li>&nbsp &nbsp
+  <li id="tabs" class="tab-title"><a href="#panel2">Soft Rules</a></li>&nbsp &nbsp
+</ul>
+
+<!-- content in the tab -->
+<!-- filters -->
+<br/>
+
+<div class="row">
+<div id="divination1" class="large-3 small-12 columns">
+<label id="tab">Alert Name:</label>
+<select>
+<option value="ALL">ALL</option>
+<option value="Global Exposure > 100%">Global Exposure > 100% of NAV</option>
+</select >
+</div>
+<div id="divination2" class="large-3 small-6 columns">
+<label id="tab">Alert id</label>
+<input id="AlertID" type="text"/>
+</div>
+
+<div id="divination3" class="large-3 small-6 columns">
+<label id="tab">Fund:</label>
+<select>
+<option value="demo-fund1">Demo Fund 1</option>
+</select>
+</div>
+
+<div  id="divination4" class="large-3 small-6 columns">
+<label id="tab">Assigned To:</label>
+<select>
+<option value="All">All</option>
+<option value="demo@aqmetrics.com">demo@aqmetrics.com</option>
+</select>
+</div>
+<div id="tab" class="row collapse date" id="dpMonths" data-date-format="mm/yyyy" data-start-view="year" data-min-view="year" style="max-width:200px;">
+
+<div class="large-3 small-6 columns">
+<table id="calander" class="table">
+	<thead>
+		<tr>
+		<br>
+			<th  id="date">Start date
+		
+				<a href="#"  class="button tiny" id="dp4" data-date-format="yyyy-mm-dd" data-date="2016-05-17">Change</a>
+			</th>
+			<br>
+			<th  id="date">End date
+				<a href="#"  class="button tiny" id="dp5" data-date-format="yyyy-mm-dd" data-date="2016-05-25">Change</a>
+				</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td id="startDate">2016-05-17</td>
+					<td id="endDate">2016-05-25</td>
+				</tr>
+			</tbody>
+</table>
+<div class="alert alert-box" style="display: none;" id="alert"><strong>Oh snap!</strong>
+</div>
+</div>
+</div>
+<table id="temptable">
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="630">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10105</td>
+      <td>Demo Fund 1</td>
+      <td>New Alert (Fund)</td>
+      <td>Global Exposure is calculated to be EUR 1.90642805E8 for fund: 1 following trade #2208. This is 379.97% of the NAV.</td>
+    </tr>
+    <tr>
+      <td>10104</td>
+      <td>Demo Fund 2</td>
+      <td>New Alert (Fund)</td>
+      <td>5/10/40 Rule Broken</td>
+    </tr>
+    <tr>
+      <td>10103</td>
+      <td>Demo Fund 3</td>
+      <td>New Alert (Fund)</td>
+      <td>5/80 Rule Broken</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+$(function(){
+	// calendar script
+		
+	var startDate = new Date(2016, 1, 25);
+	var endDate = new Date(2016, 1, 28);
+	$('#dp4').fdatepicker()
+	.on('changeDate', function (ev) {
+	if (ev.date.valueOf > endDate.valueOf()) {
+	$('#alert').show().find('strong').text('The end date can not be less then the start date');
+	}else{
+	$('alert').hide();
+	startDate = new Date(ev.date);
+	$('#startDate').text($('#dp4').data('date'));
+	}
+	$('#dp4').fdatepicker('hide');
+	});
+	$('#dp5').datepicker()
+		.on('changeDate', function (ev){
+		if(ev.date.valueOf() < startDate.valueOf()){
+		$('#alert').xhow().find('strong').text('The end date can not be less then the start date');
+		{ else {
+			$('alert').hide();
+			endDate = new Date(ev.date);
+			$('#endDate').text($('#dp5').data('date'));
+			}
+			$('#dp5').fdatepicker('hide');
+});
+});
+</script>
+
+
+
+
+<div id="divination5" class="large-3 small-6 columns">
+<label id="tab">Alert Status:</label>
+<select>
+<option value="Under_review">Under Review</option>
+<option value="Assigned">Assigned</option>
+</div>
+
+<!-- add icon -->
+<div id="add">
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_Kl5RMHdrZtk1Sf2Nb3CpaA2Wiq50wCVLHJvR8onecVYQIii50Q" width="42" height="42">
+</div>
+
+</div>
+</div>
+        </div>
+
+		    </section>
+            <a class="exit-off-canvas"></a>
+		
+<!-- include before </body> tag -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+	
+</body>
+</html>
